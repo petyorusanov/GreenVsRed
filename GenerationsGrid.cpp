@@ -118,7 +118,7 @@ void GenerationsGrid::nextGeneration()
 			if (mainGrid[i][j] == 0) {
 				if (surroundingGreens == 3 || surroundingGreens == 6) {
 					//encoding position to a single integer
-					//and stores it to change its value
+					//and stores it to change the cell's value
 					cellsToBeUpdated.push(i * 10 + j);
 				}
 			}
@@ -126,7 +126,7 @@ void GenerationsGrid::nextGeneration()
 				//mainGrid[i][j] == 1
 				if (surroundingGreens == 0 || surroundingGreens == 1 || surroundingGreens == 4 || surroundingGreens == 5 || surroundingGreens == 7 || surroundingGreens == 8) {
 					//encoding position to a single integer
-					//and stores it to change its value
+					//and stores it to change the cell's value
 					cellsToBeUpdated.push(i * 10 + j);
 				}
 			}
